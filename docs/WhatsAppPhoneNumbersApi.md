@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsAppPhoneNumbersApi
+# YCloudApiClient::WhatsAppPhoneNumbersApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -20,16 +20,16 @@ Returns a paginated list of WhatsApp business account phone numbers you've regis
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppPhoneNumbersApi.new
+api_instance = YCloudApiClient::WhatsAppPhoneNumbersApi.new
 opts = {
     page: 56, # Integer | Page number of the results to be returned, 1-based.
     limit: 56, # Integer | A limit on the number of results to be returned, or number of results per page, between 1 and 100, defaults to 10.
@@ -41,7 +41,7 @@ begin
   # List WhatsApp phone numbers
   result = api_instance.whatsapp_phone_number_list(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppPhoneNumbersApi->whatsapp_phone_number_list: #{e}"
 end
 ```
@@ -59,7 +59,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappPhoneNumberPage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppPhoneNumbersApi->whatsapp_phone_number_list_with_http_info: #{e}"
 end
 ```
@@ -99,16 +99,16 @@ Retrieves a WhatsApp business account phone number you've registered on YCloud.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppPhoneNumbersApi.new
+api_instance = YCloudApiClient::WhatsAppPhoneNumbersApi.new
 waba_id = 'whatsapp-business-account-id' # String | WhatsApp Business Account ID.
 phone_number = '+447901614024' # String | Phone number in [E.164](https://en.wikipedia.org/wiki/E.164) format.
 
@@ -116,7 +116,7 @@ begin
   # Retrieve a WhatsApp phone number
   result = api_instance.whatsapp_phone_number_retrieve(waba_id, phone_number)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppPhoneNumbersApi->whatsapp_phone_number_retrieve: #{e}"
 end
 ```
@@ -134,7 +134,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappPhoneNumber>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppPhoneNumbersApi->whatsapp_phone_number_retrieve_with_http_info: #{e}"
 end
 ```

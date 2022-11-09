@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappMessageInteractiveActionSectionsInnerRowsInner
+# YCloudApiClient::WhatsappMessageInteractiveActionSectionsInnerRowsInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappMessageInteractiveActionSectionsInnerRowsInner.new(
+instance = YCloudApiClient::WhatsappMessageInteractiveActionSectionsInnerRowsInner.new(
   id: null,
   title: null,
   description: null

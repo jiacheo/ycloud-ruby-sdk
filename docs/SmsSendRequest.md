@@ -1,4 +1,4 @@
-# OpenapiClient::SmsSendRequest
+# YCloudApiClient::SmsSendRequest
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::SmsSendRequest.new(
+instance = YCloudApiClient::SmsSendRequest.new(
   to: +447901614024,
   text: Your verification code is 123456.,
   sender_id: YCloud,

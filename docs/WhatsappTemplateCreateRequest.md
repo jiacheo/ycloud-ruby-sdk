@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappTemplateCreateRequest
+# YCloudApiClient::WhatsappTemplateCreateRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappTemplateCreateRequest.new(
+instance = YCloudApiClient::WhatsappTemplateCreateRequest.new(
   waba_id: whatsapp-business-account-id,
   name: sample_whatsapp_template,
   language: en,

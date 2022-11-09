@@ -1,4 +1,4 @@
-# OpenapiClient::Page
+# YCloudApiClient::Page
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::Page.new(
+instance = YCloudApiClient::Page.new(
   offset: null,
   limit: null,
   length: null,

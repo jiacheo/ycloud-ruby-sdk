@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappMessageTemplateComponentsInnerParametersInner
+# YCloudApiClient::WhatsappMessageTemplateComponentsInnerParametersInner
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappMessageTemplateComponentsInnerParametersInner.new(
+instance = YCloudApiClient::WhatsappMessageTemplateComponentsInnerParametersInner.new(
   type: null,
   text: null,
   payload: null,

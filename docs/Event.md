@@ -1,4 +1,4 @@
-# OpenapiClient::Event
+# YCloudApiClient::Event
 
 ## Properties
 
@@ -19,9 +19,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::Event.new(
+instance = YCloudApiClient::Event.new(
   id: null,
   type: null,
   api_version: v2,

@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappPhoneNumber
+# YCloudApiClient::WhatsappPhoneNumber
 
 ## Properties
 
@@ -21,9 +21,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappPhoneNumber.new(
+instance = YCloudApiClient::WhatsappPhoneNumber.new(
   phone_number: +16315551111,
   display_phone_number: +1 631-555-1111,
   waba_id: whatsapp-business-account-id,

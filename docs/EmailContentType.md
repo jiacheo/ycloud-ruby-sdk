@@ -1,4 +1,4 @@
-# OpenapiClient::EmailContentType
+# YCloudApiClient::EmailContentType
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::EmailContentType.new()
+instance = YCloudApiClient::EmailContentType.new()
 ```
 

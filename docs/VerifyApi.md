@@ -1,4 +1,4 @@
-# OpenapiClient::VerifyApi
+# YCloudApiClient::VerifyApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -20,23 +20,23 @@ Checks a verification with a phone number, an email address, or a verification I
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::VerifyApi.new
-verification_check_request = OpenapiClient::VerificationCheckRequest.new # VerificationCheckRequest | 
+api_instance = YCloudApiClient::VerifyApi.new
+verification_check_request = YCloudApiClient::VerificationCheckRequest.new # VerificationCheckRequest | 
 
 begin
   # Check a verification
   result = api_instance.verification_check(verification_check_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VerifyApi->verification_check: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VerificationCheck>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VerifyApi->verification_check_with_http_info: #{e}"
 end
 ```
@@ -91,23 +91,23 @@ Starts a verification by sending an SMS, voice, or email message to the recipien
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::VerifyApi.new
-verification_send_request = OpenapiClient::VerificationSendRequest.new({channel: OpenapiClient::VerificationChannel::SMS, to: '+447901614024'}) # VerificationSendRequest | Verification request that needs to be sent.
+api_instance = YCloudApiClient::VerifyApi.new
+verification_send_request = YCloudApiClient::VerificationSendRequest.new({channel: YCloudApiClient::VerificationChannel::SMS, to: '+447901614024'}) # VerificationSendRequest | Verification request that needs to be sent.
 
 begin
   # Start a verification
   result = api_instance.verification_send(verification_send_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VerifyApi->verification_send: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Verification>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VerifyApi->verification_send_with_http_info: #{e}"
 end
 ```

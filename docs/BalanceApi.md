@@ -1,4 +1,4 @@
-# OpenapiClient::BalanceApi
+# YCloudApiClient::BalanceApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -19,22 +19,22 @@ Retrieves the current account balance.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::BalanceApi.new
+api_instance = YCloudApiClient::BalanceApi.new
 
 begin
   # Retrieve balance
   result = api_instance.balance_retrieve
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling BalanceApi->balance_retrieve: #{e}"
 end
 ```
@@ -52,7 +52,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Balance>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling BalanceApi->balance_retrieve_with_http_info: #{e}"
 end
 ```

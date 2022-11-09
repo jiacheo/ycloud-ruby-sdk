@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappTemplateStatus
+# YCloudApiClient::WhatsappTemplateStatus
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappTemplateStatus.new()
+instance = YCloudApiClient::WhatsappTemplateStatus.new()
 ```
 

@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappInboundMessageType
+# YCloudApiClient::WhatsappInboundMessageType
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappInboundMessageType.new()
+instance = YCloudApiClient::WhatsappInboundMessageType.new()
 ```
 

@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationCheckRequest
+# YCloudApiClient::VerificationCheckRequest
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::VerificationCheckRequest.new(
+instance = YCloudApiClient::VerificationCheckRequest.new(
   verification_id: vid,
   to: +447901614024,
   code: 123456

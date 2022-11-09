@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappMessageTemplate
+# YCloudApiClient::WhatsappMessageTemplate
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappMessageTemplate.new(
+instance = YCloudApiClient::WhatsappMessageTemplate.new(
   name: sample_whatsapp_template,
   language: null,
   components: null

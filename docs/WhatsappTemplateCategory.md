@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappTemplateCategory
+# YCloudApiClient::WhatsappTemplateCategory
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappTemplateCategory.new()
+instance = YCloudApiClient::WhatsappTemplateCategory.new()
 ```
 

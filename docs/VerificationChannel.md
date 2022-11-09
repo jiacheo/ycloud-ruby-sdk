@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationChannel
+# YCloudApiClient::VerificationChannel
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::VerificationChannel.new()
+instance = YCloudApiClient::VerificationChannel.new()
 ```
 

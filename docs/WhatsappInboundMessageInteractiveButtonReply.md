@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappInboundMessageInteractiveButtonReply
+# YCloudApiClient::WhatsappInboundMessageInteractiveButtonReply
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappInboundMessageInteractiveButtonReply.new(
+instance = YCloudApiClient::WhatsappInboundMessageInteractiveButtonReply.new(
   id: null,
   title: null
 )

@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookEndpointUpdateRequest
+# YCloudApiClient::WebhookEndpointUpdateRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WebhookEndpointUpdateRequest.new(
+instance = YCloudApiClient::WebhookEndpointUpdateRequest.new(
   url: https://httpbin.org/anything?tag&#x3D;api,
   enabled_events: null,
   description: My first webhook endpoint.,

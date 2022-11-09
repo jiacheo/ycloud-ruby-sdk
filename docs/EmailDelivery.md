@@ -1,4 +1,4 @@
-# OpenapiClient::EmailDelivery
+# YCloudApiClient::EmailDelivery
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::EmailDelivery.new(
+instance = YCloudApiClient::EmailDelivery.new(
   email_id: null,
   recipient_address: tom@example.com,
   status: failed,

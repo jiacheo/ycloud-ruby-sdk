@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsAppTemplatesApi
+# YCloudApiClient::WhatsAppTemplatesApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -22,23 +22,23 @@ Creates a WhatsApp template. See also [Create Message Templates](https://develop
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppTemplatesApi.new
-whatsapp_template_create_request = OpenapiClient::WhatsappTemplateCreateRequest.new({waba_id: 'whatsapp-business-account-id', name: 'sample_whatsapp_template', language: 'en', category: OpenapiClient::WhatsappTemplateCategory::TRANSACTIONAL, components: [OpenapiClient::WhatsappTemplateComponent.new]}) # WhatsappTemplateCreateRequest | 
+api_instance = YCloudApiClient::WhatsAppTemplatesApi.new
+whatsapp_template_create_request = YCloudApiClient::WhatsappTemplateCreateRequest.new({waba_id: 'whatsapp-business-account-id', name: 'sample_whatsapp_template', language: 'en', category: YCloudApiClient::WhatsappTemplateCategory::TRANSACTIONAL, components: [YCloudApiClient::WhatsappTemplateComponent.new]}) # WhatsappTemplateCreateRequest | 
 
 begin
   # Create a WhatsApp template
   result = api_instance.whatsapp_template_create(whatsapp_template_create_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_create: #{e}"
 end
 ```
@@ -56,7 +56,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappTemplate>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_create_with_http_info: #{e}"
 end
 ```
@@ -93,16 +93,16 @@ Deletes WhatsApp templates by name. If that template name exists in multiple lan
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppTemplatesApi.new
+api_instance = YCloudApiClient::WhatsAppTemplatesApi.new
 waba_id = 'whatsapp-business-account-id' # String | WhatsApp Business Account ID.
 name = 'sample_whatsapp_template' # String | Name of the template.
 
@@ -110,7 +110,7 @@ begin
   # Delete WhatsApp templates by name
   result = api_instance.whatsapp_template_delete_by_name(waba_id, name)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_delete_by_name: #{e}"
 end
 ```
@@ -128,7 +128,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<WhatsappTemplate>>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_delete_by_name_with_http_info: #{e}"
 end
 ```
@@ -166,16 +166,16 @@ Returns a paginated list of WhatsApp templates you've previously created.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppTemplatesApi.new
+api_instance = YCloudApiClient::WhatsAppTemplatesApi.new
 opts = {
     page: 56, # Integer | Page number of the results to be returned, 1-based.
     limit: 56, # Integer | A limit on the number of results to be returned, or number of results per page, between 1 and 100, defaults to 10.
@@ -189,7 +189,7 @@ begin
   # List WhatsApp templates
   result = api_instance.whatsapp_template_list(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_list: #{e}"
 end
 ```
@@ -207,7 +207,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappTemplatePage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_list_with_http_info: #{e}"
 end
 ```
@@ -249,16 +249,16 @@ Retrieves a WhatsApp template by name and language.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppTemplatesApi.new
+api_instance = YCloudApiClient::WhatsAppTemplatesApi.new
 waba_id = 'whatsapp-business-account-id' # String | WhatsApp Business Account ID.
 name = 'sample_whatsapp_template' # String | Name of the template.
 language = 'en' # String | Language code of the template. See [Supported Languages](https://developers.facebook.com/docs/whatsapp/api/messages/message-templates#supported-languages-) for all codes.
@@ -267,7 +267,7 @@ begin
   # Retrieve a WhatsApp template
   result = api_instance.whatsapp_template_retrieve_by_name_and_language(waba_id, name, language)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_retrieve_by_name_and_language: #{e}"
 end
 ```
@@ -285,7 +285,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappTemplate>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppTemplatesApi->whatsapp_template_retrieve_by_name_and_language_with_http_info: #{e}"
 end
 ```

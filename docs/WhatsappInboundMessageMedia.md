@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappInboundMessageMedia
+# YCloudApiClient::WhatsappInboundMessageMedia
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappInboundMessageMedia.new(
+instance = YCloudApiClient::WhatsappInboundMessageMedia.new(
   link: null,
   caption: null,
   filename: null,

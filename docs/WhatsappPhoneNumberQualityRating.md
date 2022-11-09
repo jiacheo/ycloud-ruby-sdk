@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappPhoneNumberQualityRating
+# YCloudApiClient::WhatsappPhoneNumberQualityRating
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappPhoneNumberQualityRating.new()
+instance = YCloudApiClient::WhatsappPhoneNumberQualityRating.new()
 ```
 

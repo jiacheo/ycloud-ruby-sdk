@@ -1,4 +1,4 @@
-# OpenapiClient::EmailsApi
+# YCloudApiClient::EmailsApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -19,23 +19,23 @@ Sends an outbound email message.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::EmailsApi.new
-email_send_request = OpenapiClient::EmailSendRequest.new({from: 'YCloud<ycloud@ycloud-mail.com>', to: 'to1@example.com,Nick<to2@example.com>', subject: 'subject_example', content: 'This is a test message from #nick#.'}) # EmailSendRequest | 
+api_instance = YCloudApiClient::EmailsApi.new
+email_send_request = YCloudApiClient::EmailSendRequest.new({from: 'YCloud<ycloud@ycloud-mail.com>', to: 'to1@example.com,Nick<to2@example.com>', subject: 'subject_example', content: 'This is a test message from #nick#.'}) # EmailSendRequest | 
 
 begin
   # Send an email
   result = api_instance.email_send(email_send_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling EmailsApi->email_send: #{e}"
 end
 ```
@@ -53,7 +53,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Email>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling EmailsApi->email_send_with_http_info: #{e}"
 end
 ```

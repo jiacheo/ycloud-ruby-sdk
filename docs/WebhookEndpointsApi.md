@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookEndpointsApi
+# YCloudApiClient::WebhookEndpointsApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -24,23 +24,23 @@ Creates a webhook endpoint listening the specified events.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
-webhook_endpoint_create_request = OpenapiClient::WebhookEndpointCreateRequest.new({url: 'https://httpbin.org/anything?tag=api', enabled_events: [OpenapiClient::EventType::EMAIL_DELIVERY_UPDATED]}) # WebhookEndpointCreateRequest | 
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
+webhook_endpoint_create_request = YCloudApiClient::WebhookEndpointCreateRequest.new({url: 'https://httpbin.org/anything?tag=api', enabled_events: [YCloudApiClient::EventType::EMAIL_DELIVERY_UPDATED]}) # WebhookEndpointCreateRequest | 
 
 begin
   # Create a webhook endpoint
   result = api_instance.webhook_endpoint_create(webhook_endpoint_create_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_create: #{e}"
 end
 ```
@@ -58,7 +58,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpoint>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_create_with_http_info: #{e}"
 end
 ```
@@ -95,23 +95,23 @@ Deletes a webhook endpoint.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
 id = 'wh627c8640675de8fc689ab9d9' # String | ID of the webhook endpoint.
 
 begin
   # Delete a webhook endpoint
   result = api_instance.webhook_endpoint_delete(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_delete: #{e}"
 end
 ```
@@ -129,7 +129,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpoint>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_delete_with_http_info: #{e}"
 end
 ```
@@ -166,16 +166,16 @@ Returns a paginated list of webhook endpoints.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
 opts = {
     page: 56, # Integer | Page number of the results to be returned, 1-based.
     limit: 56, # Integer | A limit on the number of results to be returned, or number of results per page, between 1 and 100, defaults to 10.
@@ -186,7 +186,7 @@ begin
   # List webhook endpoints
   result = api_instance.webhook_endpoint_list(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_list: #{e}"
 end
 ```
@@ -204,7 +204,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpointPage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_list_with_http_info: #{e}"
 end
 ```
@@ -243,23 +243,23 @@ Retrieves the webhook endpoint with the given ID.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
 id = 'wh627c8640675de8fc689ab9d9' # String | ID of the webhook endpoint.
 
 begin
   # Retrieve a webhook endpoint
   result = api_instance.webhook_endpoint_retrieve(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_retrieve: #{e}"
 end
 ```
@@ -277,7 +277,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpoint>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_retrieve_with_http_info: #{e}"
 end
 ```
@@ -314,23 +314,23 @@ Generates a new secret for a webhook endpoint.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
 id = 'wh627c8640675de8fc689ab9d9' # String | ID of the webhook endpoint.
 
 begin
   # Rotate a webhook endpoint secret
   result = api_instance.webhook_endpoint_rotate_secret(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_rotate_secret: #{e}"
 end
 ```
@@ -348,7 +348,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpoint>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_rotate_secret_with_http_info: #{e}"
 end
 ```
@@ -385,24 +385,24 @@ Updates a webhook endpoint, such as url, events, status.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WebhookEndpointsApi.new
+api_instance = YCloudApiClient::WebhookEndpointsApi.new
 id = 'wh627c8640675de8fc689ab9d9' # String | ID of the webhook endpoint.
-webhook_endpoint_update_request = OpenapiClient::WebhookEndpointUpdateRequest.new # WebhookEndpointUpdateRequest | 
+webhook_endpoint_update_request = YCloudApiClient::WebhookEndpointUpdateRequest.new # WebhookEndpointUpdateRequest | 
 
 begin
   # Update a webhook endpoint
   result = api_instance.webhook_endpoint_update(id, webhook_endpoint_update_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_update: #{e}"
 end
 ```
@@ -420,7 +420,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WebhookEndpoint>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WebhookEndpointsApi->webhook_endpoint_update_with_http_info: #{e}"
 end
 ```

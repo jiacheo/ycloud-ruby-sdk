@@ -1,4 +1,4 @@
-# OpenapiClient::EmailSendRequest
+# YCloudApiClient::EmailSendRequest
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::EmailSendRequest.new(
+instance = YCloudApiClient::EmailSendRequest.new(
   from: YCloud&lt;ycloud@ycloud-mail.com&gt;,
   to: to1@example.com,Nick&lt;to2@example.com&gt;,
   subject: null,

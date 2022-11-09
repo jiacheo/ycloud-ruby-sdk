@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappTemplatePage
+# YCloudApiClient::WhatsappTemplatePage
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappTemplatePage.new(
+instance = YCloudApiClient::WhatsappTemplatePage.new(
   items: null,
   offset: null,
   limit: null,

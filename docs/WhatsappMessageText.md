@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappMessageText
+# YCloudApiClient::WhatsappMessageText
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappMessageText.new(
+instance = YCloudApiClient::WhatsappMessageText.new(
   body: null,
   preview_url: null
 )

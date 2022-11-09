@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappTemplateComponentButtonType
+# YCloudApiClient::WhatsappTemplateComponentButtonType
 
 ## Properties
 
@@ -8,8 +8,8 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappTemplateComponentButtonType.new()
+instance = YCloudApiClient::WhatsappTemplateComponentButtonType.new()
 ```
 

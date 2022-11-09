@@ -1,4 +1,4 @@
-# OpenapiClient::VoicePage
+# YCloudApiClient::VoicePage
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::VoicePage.new(
+instance = YCloudApiClient::VoicePage.new(
   items: null,
   offset: null,
   limit: null,

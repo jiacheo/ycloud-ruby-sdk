@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsappInboundMessageLocation
+# YCloudApiClient::WhatsappInboundMessageLocation
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WhatsappInboundMessageLocation.new(
+instance = YCloudApiClient::WhatsappInboundMessageLocation.new(
   latitude: null,
   longitude: null,
   address: null,

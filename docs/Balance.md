@@ -1,4 +1,4 @@
-# OpenapiClient::Balance
+# YCloudApiClient::Balance
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::Balance.new(
+instance = YCloudApiClient::Balance.new(
   amount: 190.0765,
   currency: USD
 )

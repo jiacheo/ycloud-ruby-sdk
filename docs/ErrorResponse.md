@@ -1,4 +1,4 @@
-# OpenapiClient::ErrorResponse
+# YCloudApiClient::ErrorResponse
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::ErrorResponse.new(
+instance = YCloudApiClient::ErrorResponse.new(
   error: null
 )
 ```

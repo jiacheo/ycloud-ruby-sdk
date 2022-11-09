@@ -1,4 +1,4 @@
-# OpenapiClient::WhatsAppMessagesApi
+# YCloudApiClient::WhatsAppMessagesApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -20,23 +20,23 @@ Retrieves a WhatsApp message you've previously sent.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppMessagesApi.new
+api_instance = YCloudApiClient::WhatsAppMessagesApi.new
 id = '627c8640675de8fc689ab9d9' # String | ID of the object.
 
 begin
   # Retrieve a WhatsApp message
   result = api_instance.whatsapp_message_retrieve(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppMessagesApi->whatsapp_message_retrieve: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappMessage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppMessagesApi->whatsapp_message_retrieve_with_http_info: #{e}"
 end
 ```
@@ -91,23 +91,23 @@ Sends an outbound WhatsApp message.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::WhatsAppMessagesApi.new
-whatsapp_message_send_request = OpenapiClient::WhatsappMessageSendRequest.new({from: '+447901614024', to: '+447901614024', type: OpenapiClient::WhatsappMessageType::TEMPLATE}) # WhatsappMessageSendRequest | 
+api_instance = YCloudApiClient::WhatsAppMessagesApi.new
+whatsapp_message_send_request = YCloudApiClient::WhatsappMessageSendRequest.new({from: '+447901614024', to: '+447901614024', type: YCloudApiClient::WhatsappMessageType::TEMPLATE}) # WhatsappMessageSendRequest | 
 
 begin
   # Send a WhatsApp message
   result = api_instance.whatsapp_message_send(whatsapp_message_send_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppMessagesApi->whatsapp_message_send: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <WhatsappMessage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling WhatsAppMessagesApi->whatsapp_message_send_with_http_info: #{e}"
 end
 ```

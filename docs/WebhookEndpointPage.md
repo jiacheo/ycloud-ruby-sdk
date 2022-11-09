@@ -1,4 +1,4 @@
-# OpenapiClient::WebhookEndpointPage
+# YCloudApiClient::WebhookEndpointPage
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::WebhookEndpointPage.new(
+instance = YCloudApiClient::WebhookEndpointPage.new(
   items: null,
   offset: null,
   limit: null,

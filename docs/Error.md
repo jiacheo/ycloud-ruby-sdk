@@ -1,4 +1,4 @@
-# OpenapiClient::Error
+# YCloudApiClient::Error
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::Error.new(
+instance = YCloudApiClient::Error.new(
   status: 404,
   code: NOT_FOUND,
   message: The requested resource does not exist.,

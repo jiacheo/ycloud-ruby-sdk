@@ -1,4 +1,4 @@
-# OpenapiClient::VoicesApi
+# YCloudApiClient::VoicesApi
 
 All URIs are relative to *https://api.ycloud.com/v2*
 
@@ -20,16 +20,16 @@ Returns a paginated list of voice calls you've previously sent.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::VoicesApi.new
+api_instance = YCloudApiClient::VoicesApi.new
 opts = {
     page: 56, # Integer | Page number of the results to be returned, 1-based.
     limit: 56, # Integer | A limit on the number of results to be returned, or number of results per page, between 1 and 100, defaults to 10.
@@ -43,7 +43,7 @@ begin
   # List voice records
   result = api_instance.voice_list(opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VoicesApi->voice_list: #{e}"
 end
 ```
@@ -61,7 +61,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <VoicePage>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VoicesApi->voice_list_with_http_info: #{e}"
 end
 ```
@@ -103,23 +103,23 @@ Sends an outbound voice call verification code.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'ycloud_api'
 # setup authorization
-OpenapiClient.configure do |config|
+YCloudApiClient.configure do |config|
   # Configure API key authorization: api_key
   config.api_key['api_key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   # config.api_key_prefix['api_key'] = 'Bearer'
 end
 
-api_instance = OpenapiClient::VoicesApi.new
-voice_send_request = OpenapiClient::VoiceSendRequest.new({to: '+447901614024', verification_code: '123456'}) # VoiceSendRequest | Voice call request that needs to be sent.
+api_instance = YCloudApiClient::VoicesApi.new
+voice_send_request = YCloudApiClient::VoiceSendRequest.new({to: '+447901614024', verification_code: '123456'}) # VoiceSendRequest | Voice call request that needs to be sent.
 
 begin
   # Send a voice code
   result = api_instance.voice_send(voice_send_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VoicesApi->voice_send: #{e}"
 end
 ```
@@ -137,7 +137,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Voice>
-rescue OpenapiClient::ApiError => e
+rescue YCloudApiClient::ApiError => e
   puts "Error when calling VoicesApi->voice_send_with_http_info: #{e}"
 end
 ```

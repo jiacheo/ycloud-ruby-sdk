@@ -1,4 +1,4 @@
-# OpenapiClient::Voice
+# YCloudApiClient::Voice
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::Voice.new(
+instance = YCloudApiClient::Voice.new(
   id: null,
   to: +447901614024,
   verification_code: 123456,

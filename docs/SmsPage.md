@@ -1,4 +1,4 @@
-# OpenapiClient::SmsPage
+# YCloudApiClient::SmsPage
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::SmsPage.new(
+instance = YCloudApiClient::SmsPage.new(
   items: null,
   offset: null,
   limit: null,

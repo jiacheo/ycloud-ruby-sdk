@@ -1,4 +1,4 @@
-# OpenapiClient::VerificationSendRequest
+# YCloudApiClient::VerificationSendRequest
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'ycloud_api'
 
-instance = OpenapiClient::VerificationSendRequest.new(
+instance = YCloudApiClient::VerificationSendRequest.new(
   channel: null,
   to: +447901614024,
   code: 123456,
